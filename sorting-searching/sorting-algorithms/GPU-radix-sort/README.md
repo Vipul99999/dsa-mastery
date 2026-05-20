@@ -43,14 +43,14 @@ Where:
 
 ```text
 O(n + b)
-
+```
 Where:
 
 n = input size
 b = radix bucket count
 GPU-Oriented Design
 
-GPU Radix Sort typically uses:
+## GPU Radix Sort typically uses:
 
 Histogram computation
 Prefix scan (exclusive scan)
@@ -59,7 +59,7 @@ Multiple radix passes
 
 This repository demonstrates CPU simulation of GPU-style radix sort logic.
 
-Algorithm Steps
+## Algorithm Steps
 
 Example:
 
@@ -74,17 +74,23 @@ Pass 2 (10s place):
 
 Pass 3 (100s place):
 [2, 24, 45, 66, 75, 90, 170, 802]
-Advantages
+
+## Advantages
+
 Very fast for integers
 Excellent GPU utilization
 Stable sorting
 Predictable runtime
 Parallelizable
-Disadvantages
+
+## Disadvantages
+
 Not ideal for floating-point values without transformation
 Additional memory required
 More complex GPU implementation
-Applications
+
+## Applications
+
 GPU databases
 Real-time analytics
 Scientific computing
@@ -94,7 +100,7 @@ Graphics pipelines
 Sorting millions of integers
 CUDA/OpenCL Adaptation
 
-Real GPU implementation generally uses:
+## Real GPU implementation generally uses:
 
 CUDA kernels
 Shared memory
@@ -117,7 +123,8 @@ GPU-Radix-Sort.cpp
 GPU-Radix-Sort.py
 GPU-Radix-Sort.js
 GPU-Radix-Sort.java
-Future Improvements
+
+## Future Improvements
 CUDA implementation
 OpenCL version
 Multi-GPU support
