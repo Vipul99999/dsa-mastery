@@ -1,7 +1,5 @@
 import math
-
 INSERTION_SORT_THRESHOLD = 16
-
 
 def insertion_sort(arr, left, right):
     for i in range(left + 1, right + 1):
