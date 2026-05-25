@@ -285,5 +285,3 @@ The implementations here demonstrate:
 * simplified parallel-style logic
 
 without requiring actual GPU programming.
-
-```
